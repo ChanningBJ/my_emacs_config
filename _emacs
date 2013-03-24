@@ -1,5 +1,5 @@
 
-(load-file "~/.emacd.d/site-lisp/cedet-1.1/common/cedet.el")
+(load-file "~/.emacs.d/site-lisp/cedet-1.1/common/cedet.el")
 (require 'cedet)
 (semantic-load-enable-minimum-features)
 (semantic-load-enable-code-helpers)
@@ -12,12 +12,12 @@
 ;(require 'ibus)
 ;(add-hook 'after-init-hook 'ibus-mode-on)
 
-(add-to-list 'load-path  "~/.emacd.d/site-lisp/")
-;; (load "~/.emacd.d/site-lisp/highlight-indentation.el")
+(add-to-list 'load-path  "~/.emacs.d/site-lisp/")
+;; (load "~/.emacs.d/site-lisp/highlight-indentation.el")
 ;; (set-face-background 'highlight-indentation-face "#e3e3d3")
 ;; (set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
 
-(add-to-list 'load-path  "~/.emacd.d/site-lisp/git-emacs")
+(add-to-list 'load-path  "~/.emacs.d/site-lisp/git-emacs")
 (require 'git-emacs)
 (global-set-key [f9] 'git-commit-all)
 
@@ -70,15 +70,15 @@
 
 ;(setq stack-trace-on-error t)
 ;(add-to-list 'load-path
-;	     "~/.emacd.d/site-lisp/ecb")
+;	     "~/.emacs.d/site-lisp/ecb")
 ;(require 'ecb)
 
 
 (add-to-list 'load-path
-              "~/.emacd.d/site-lisp/yasnippet-0.6.1c/")
+              "~/.emacs.d/site-lisp/yasnippet-0.6.1c/")
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas/initialize)
-(yas/load-directory "~/.emacd.d/site-lisp/yasnippet-0.6.1c/snippets")
+(yas/load-directory "~/.emacs.d/site-lisp/yasnippet-0.6.1c/snippets")
 
 
 
@@ -102,10 +102,10 @@
 (global-set-key (kbd "C-l") 'hs-hide-level)
 
 
-;(add-to-list 'load-path  "~/.emacd.d/site-lisp/")
-;/home/chengming/.emacd.d/site-lisp/nginx-mode
+;(add-to-list 'load-path  "~/.emacs.d/site-lisp/")
+;/home/chengming/.emacs.d/site-lisp/nginx-mode
 
-(load "~/.emacd.d/site-lisp/nginx-mode/nginx-mode.el")
+(load "~/.emacs.d/site-lisp/nginx-mode/nginx-mode.el")
 
 (setq tab-width 4)
 
@@ -113,7 +113,7 @@
 
 
 ; emacs-for-python
-;(load-file "~/.emacd.d/site-lisp/emacs-for-python/epy-init.el")
+;(load-file "~/.emacs.d/site-lisp/emacs-for-python/epy-init.el")
 ;(global-set-key "\r" 'newline-and-indent)
 ;end emacs-for-python
 
@@ -122,7 +122,7 @@
 
 
 
-;(add-to-list 'load-path  "~/.emacd.d/site-lisp/ibus-el/")
+;(add-to-list 'load-path  "~/.emacs.d/site-lisp/ibus-el/")
 ;(require 'ibus)
 ;(add-hook 'after-init-hook 'ibus-mode-on)
 
@@ -145,13 +145,13 @@
 ;; -*- Emacs-Lisp -*-
  
 ;; Time-stamp: <2010-04-09 10:22:51 Friday by ahei>
-(add-to-list 'load-path  "~/.emacd.d/site-lisp/auto-complete-1.3.1")
+(add-to-list 'load-path  "~/.emacs.d/site-lisp/auto-complete-1.3.1")
 
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
 
-(add-to-list 'load-path  "~/.emacd.d/site-lisp/auto-complete-clang")
+(add-to-list 'load-path  "~/.emacs.d/site-lisp/auto-complete-clang")
 (require 'auto-complete-clang)
 ;(setq ac-clang-auto-save t)
 ;(setq ac-auto-start t)
@@ -227,7 +227,7 @@
 (require 'rcompile)
 
 ;; my emacs plugin
-(add-to-list 'load-path  "~/.emacd.d/site-lisp/emacs-util/")
+(add-to-list 'load-path  "~/.emacs.d/site-lisp/emacs-util/")
 (require 'save-do)
 ;(setq save-do-command "ls -all")
 (global-set-key [f8] 'save-do)
