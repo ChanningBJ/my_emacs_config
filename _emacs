@@ -50,7 +50,7 @@
 
 
 
-(setq org-agenda-files (list "~/workspace/todo.org"))
+(setq org-agenda-files (list "~/workspace/pm.org"))
 (setq org-todo-keywords
       '((sequence "TODO" "DOING" "FEEDBACK" "|" "DONE" "DELEGATED")))
 (global-set-key [f11] 'org-clock-in)
