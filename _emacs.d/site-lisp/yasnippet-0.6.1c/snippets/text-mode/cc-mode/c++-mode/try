@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: try-catch-wrap
+# binding: C-c s t
+# --
+try {
+  $0
+} catch (std::exception& e) {
+  std::cerr << "error: " << e.what() << std::endl;
+} // eo try-catch

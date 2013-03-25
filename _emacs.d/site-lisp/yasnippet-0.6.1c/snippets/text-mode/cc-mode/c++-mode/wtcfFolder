@@ -1,0 +1,7 @@
+#name : wtcffolder ... { ... }
+# --
+${1:FolderLocator} floc(${2:key});
+FolderIteratorPtr iter = ${3:CabinetPtr}->createFolderIterator(floc);
+if(iter->goToNext()){
+  FolderPtr ${4:folderPtr} = ${3:CabinetPtr}->openFolder(iter, ADBI_OPT_LOCK);
+}
